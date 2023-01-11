@@ -1,0 +1,1 @@
+__DML__ or __Data Markup Language__ is the structure format used for data serialization in Wizard101 and it's relevant systems. This system allows the client to quickly instantiate a new, context specific request from hard-coded templates to then send to a service.

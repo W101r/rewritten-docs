@@ -1,0 +1,3 @@
+With as much traffic as the data management layer handles, it's impossible to fully acknowledge the complex data types of C++. Kingsisle uses an internal system labeled as `ObjectProperty` to handle such cases.
+
+In some cases, a [DML record](../DML/dml-records.md) will contain an unsuspecting string which actually represents the serialized binary buffer of an internal C++ type. For future reference, we shall label these strings as a `ByteString`.

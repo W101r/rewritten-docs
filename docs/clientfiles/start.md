@@ -1,0 +1,1 @@
+This section serves as documentation for the usage of files found in the client directories.

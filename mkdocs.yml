@@ -1,14 +1,63 @@
 site_name: Wizard101Rewritten
+nav:
+  - Home: index.md
+  - 'Documentation':
+    - 'Kingisle Networking':
+      - 'Networking Protocol': documentation/KINP/kinp.md
+      - 'Sniffing Packets': documentation/KINP/getting-packets.md
+      - 'Packet Framing': documentation/KINP/packet-framing.md
+    - 'Data Markup Language':
+        - 'What is DML?': documentation/DML/dml.md
+        - "DML Data Types": documentation/DML/dml-data-types.md
+        - 'DML Protocols': documentation/DML/dml-protocols.md
+        - 'DML Records': documentation/DML/dml-records.md
+    - 'ObjectProperty':
+      - 'ObjectProperty': documentation/ObjectProperty/ObjectProperty.md
+      - 'PropertyClass': documentation/ObjectProperty/PropertyClass.md
+      - 'ObjectManager': documentation/ObjectProperty/ObjectManager.md
+  - 'Imlight':
+    - 'Imlight': imlight/imlight.md
+  - 'Client Files':
+    - 'Start': clientfiles/start.md
+    - 'Bin':
+      - 'revision.dat': clientfiles/bin/revision.md
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - toc:
+      permalink: true
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
   palette:
+    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: black
+      accent: deep purple
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
+
+    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
+      accent: deep purple
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+        primary: black
